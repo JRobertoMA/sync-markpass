@@ -1,0 +1,39 @@
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Datos de la app: SQLite (marcadores + bóveda cifrada), cola de jobs, logs
+/data/
+/logs/
+/exports/
+*.log
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Exports reales de los navegadores que se dejan en la raíz para probar.
+# Son marcadores personales: nunca al repo.
+/*.html
+!/index.html
+/*.json
+!/composer.json
+/*.sql
+
+# CSV de contraseñas exportados por Chrome/Firefox: van en TEXTO PLANO
+*.csv
+
+# Dependencias (se instalan con `composer install`)
+/vendor/
+composer.lock
+
+# Editores y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.tmp
